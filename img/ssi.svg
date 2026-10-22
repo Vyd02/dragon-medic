@@ -1,0 +1,37 @@
+<svg width="940" height="1100" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 940 1100">
+  <defs>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff4b8"/><stop offset=".35" stop-color="#f4c43a"/><stop offset=".65" stop-color="#d79a12"/><stop offset="1" stop-color="#8a5a06"/>
+    </linearGradient>
+    <linearGradient id="gStar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff0a0"/><stop offset=".45" stop-color="#ffc928"/><stop offset="1" stop-color="#d48a00"/>
+    </linearGradient>
+    <linearGradient id="gMar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a2632"/><stop offset="1" stop-color="#4a141c"/>
+    </linearGradient>
+    <linearGradient id="gField" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#f6f0e4"/><stop offset="1" stop-color="#ddd3c0"/>
+    </linearGradient>
+    <linearGradient id="gSheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".25" stop-color="#fff" stop-opacity=".12"/><stop offset=".5" stop-color="#fff" stop-opacity=".9"/><stop offset=".75" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="cShield"><path d="M0 0H900V500Q900 822 450 1057Q0 822 0 500Z"/></clipPath>
+  </defs>
+  <!-- shield -->
+  <path d="M10 10H890V500Q890 815 450 1045Q10 815 10 500Z" fill="url(#gField)" stroke="#3b2500" stroke-width="20" stroke-linejoin="round"/>
+  <path d="M10 10H890V500Q890 815 450 1045Q10 815 10 500Z" fill="none" stroke="url(#gGold)" stroke-width="12" stroke-linejoin="round"/>
+  <!-- maroon pales -->
+  <g stroke-linejoin="round">
+    <path id="pale" d="M46 42H248V878Q130 810 80 700Q46 620 46 500Z" fill="url(#gMar)" stroke="#3b2500" stroke-width="16"/>
+    <use href="#pale" transform="matrix(-1 0 0 1 900 0)"/>
+    <path d="M46 42H248V878Q130 810 80 700Q46 620 46 500Z" fill="none" stroke="url(#gGold)" stroke-width="9"/>
+    <path d="M46 42H248V878Q130 810 80 700Q46 620 46 500Z" transform="matrix(-1 0 0 1 900 0)" fill="none" stroke="url(#gGold)" stroke-width="9"/>
+  </g>
+  <!-- stars -->
+  <g transform="translate(450 442)" stroke-linejoin="miter">
+    <path d="M-150-140L0-78 150-140 78 0 150 140 0 78-150 140-78 0Z" fill="url(#gMar)" stroke="#3b2500" stroke-width="12"/>
+    <path d="M-150-140L0-78 150-140 78 0 150 140 0 78-150 140-78 0Z" fill="none" stroke="url(#gGold)" stroke-width="6"/>
+    <path d="M0-298L42-42 188 0 42 42 0 298-42 42-188 0-42-42Z" fill="url(#gStar)" stroke="#3b2500" stroke-width="10"/>
+    <path d="M0-298L42-42 0 0Z M188 0L42 42 0 0Z M0 298L-42 42 0 0Z M-188 0L-42-42 0 0Z" fill="#fff" opacity=".28"/>
+  </g>
+  </svg>
